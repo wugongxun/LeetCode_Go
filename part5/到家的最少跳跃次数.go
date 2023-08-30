@@ -12,7 +12,7 @@ func minimumJumps(forbidden []int, a, b, x int) int {
 	maxVal := 0
 	forbiddenSet := make(map[int]bool)
 	for _, f := range forbidden {
-		//maxVal = max(maxVal, f)
+		maxVal = max(maxVal, f)
 		forbiddenSet[f] = true
 	}
 	//上限证明。。。(buhui)
