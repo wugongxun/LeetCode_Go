@@ -1,10 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	//print(findMaxFish([][]int{{0, 2, 1, 0}, {4, 0, 0, 3}, {1, 0, 0, 4}, {0, 3, 2, 0}}))
-	dfs(1)
+	print(findMaxFish([][]int{{0, 2, 1, 0}, {4, 0, 0, 3}, {1, 0, 0, 4}, {0, 3, 2, 0}}))
 }
 
 var dirs = []struct{ x, y int }{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
@@ -37,12 +34,4 @@ func max(a, b int) int {
 		return a
 	}
 	return b
-}
-
-func dfs(i int) {
-	if i >= 10 {
-		return
-	}
-	fmt.Printf("%d\n", i)
-	dfs(i + 1)
 }
