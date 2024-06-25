@@ -60,10 +60,3 @@ func maxCoins(nums []int) int {
 //	}
 //	return cache[l][r]
 //}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}

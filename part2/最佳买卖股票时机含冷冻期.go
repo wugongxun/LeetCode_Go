@@ -21,17 +21,3 @@ func maxProfit(prices []int) int {
 	}
 	return dp[n-1][1]
 }
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
-}
-
-func min(i, j int) int {
-	if i < j {
-		return i
-	}
-	return j
-}

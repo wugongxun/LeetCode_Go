@@ -17,10 +17,3 @@ func mergeTriplets(triplets [][]int, target []int) bool {
 	}
 	return a == target[0] && b == target[1] && c == target[2]
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}

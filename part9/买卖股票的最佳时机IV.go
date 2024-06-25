@@ -35,10 +35,3 @@ func maxProfit(k int, prices []int) int {
 	//}
 	//return dp[n][k+1][0]
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}

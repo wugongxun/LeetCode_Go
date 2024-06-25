@@ -21,10 +21,3 @@ func maxDistToClosest(seats []int) (res int) {
 	res = max(len(seats)-prev-1, res)
 	return res
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
